@@ -1,0 +1,9 @@
+# cyber_tues_pt_sept 14th
+# Mohammed Haroon HLT
+# 4 times table
+
+num=1
+for loopcounter in range(4,48,4):    #setting the range starting at 4 to 48 in increments of 4
+
+    print(num,"x 4 = ",loopcounter)
+    num=num+1
