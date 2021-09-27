@@ -1,0 +1,34 @@
+# cyber_tues_pt_sept 14th
+# Mohammed Haroon HLT
+# Extend number game
+
+import random
+
+print ("\n\tHello and welcome to the Guess your number game \n\n")
+
+myName = input("Hello! What is your name?")
+number = random.randint(1,10)
+
+def main():
+    guesses=0
+    print(number)
+    print("Well, " + myName +  " I am thinking of a number between 1 and 10.")
+
+    while guesses<6:
+        guess = int(input("Take a guess:"))
+
+        if guess == number:
+            print("Good job, " + myName + " You guessed my number")
+            print("thank you for playing")
+            break
+        else:
+            print("Wrong, have another guess")
+            guesses = guesses + 1
+        if guess<number:
+            print("Your guess is too low")
+        if guess>number:
+            print("Your guess is too high")
+        if guesses == 6:
+            print("You have run out of guesses, the correct number is" ,number)
+
+main()
