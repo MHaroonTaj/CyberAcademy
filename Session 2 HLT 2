@@ -1,0 +1,8 @@
+# cyber_tues_pt_sept 14th
+# Mohammed Haroon HLT
+# 5 times table
+
+number = 1
+while number<12:
+    print(number*5)
+    number=number+1
